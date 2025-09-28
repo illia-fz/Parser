@@ -257,4 +257,33 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
+
+### 🚀 Example Usage
+
+To demonstrate how to use this application in your own project, here’s a basic example that shows how to fetch and analyze news articles:
+
+```python
+from parser import fetch_news, analyze_articles
+
+# Fetch news articles from multiple sources
+articles = fetch_news(sources=["BBC", "Reuters"])
+
+# Analyze sentiment and extract keywords
+analysis_results = analyze_articles(articles)
+
+# Print the analysis results
+for result in analysis_results:
+    print(f"Title: {result['title']}")
+    print(f"Sentiment: {result['sentiment']}")
+    print(f"Keywords: {', '.join(result['keywords'])}")
+    print()
+``````
+
+
+````
+
+
+````
+`
+
 **Built with ❤️ for the developer community**
